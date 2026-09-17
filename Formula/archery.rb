@@ -5,21 +5,21 @@
 class Archery < Formula
   desc "Psql-style CLI for Archery SQL audit platform (SELECT-only)"
   homepage "https://github.com/rjchien728/archery-cli"
-  version "0.5.1"
+  version "0.5.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rjchien728/archery-cli/releases/download/v0.5.1/archery_0.5.1_darwin_x86_64.tar.gz"
-      sha256 "c6b264f31e75b5eb5380322e52fcc9d6bc835dddd4b9a622d75c1d97c0ba53c6"
+      url "https://github.com/rjchien728/archery-cli/releases/download/v0.5.2/archery_0.5.2_darwin_x86_64.tar.gz"
+      sha256 "89ad6844f710db861d06d71573c44d2dd0924d1b3c07d80840d86aa0aa793d9f"
 
       define_method(:install) do
         bin.install "archery"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rjchien728/archery-cli/releases/download/v0.5.1/archery_0.5.1_darwin_arm64.tar.gz"
-      sha256 "41f7fba1dc12a357e4778d6892ed711158f3452ab80dca2d4e5ca85fde1b4320"
+      url "https://github.com/rjchien728/archery-cli/releases/download/v0.5.2/archery_0.5.2_darwin_arm64.tar.gz"
+      sha256 "c42d3fb3cb4ed58216989e9fdf7882a8236ef95a741a8991209980be0897bb38"
 
       define_method(:install) do
         bin.install "archery"
@@ -29,15 +29,15 @@ class Archery < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rjchien728/archery-cli/releases/download/v0.5.1/archery_0.5.1_linux_x86_64.tar.gz"
-      sha256 "2e30dc8aa2c28b4771c21d550f19c259f923f4bb3d732018f47b761883cea54f"
+      url "https://github.com/rjchien728/archery-cli/releases/download/v0.5.2/archery_0.5.2_linux_x86_64.tar.gz"
+      sha256 "63ab09224ef3c80faefeb6b997ea210cea04e61023ff8fbe716a317969b5e006"
       define_method(:install) do
         bin.install "archery"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rjchien728/archery-cli/releases/download/v0.5.1/archery_0.5.1_linux_arm64.tar.gz"
-      sha256 "6052b66029b85aef27ca8da6400669912f1e51308f3741933b6d95f34084d00a"
+      url "https://github.com/rjchien728/archery-cli/releases/download/v0.5.2/archery_0.5.2_linux_arm64.tar.gz"
+      sha256 "b0b810e7d84c4bbe56a09b0c3356705ec99d4cac6bb667bf47f0ac015ffb6d9a"
       define_method(:install) do
         bin.install "archery"
       end
